@@ -4,247 +4,303 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sinha Insurance & Financial Solutions</title>
+<title>Sinha Insurance & Financial Solutions | Insurance & Loans in Agra</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<meta name="description" content="Sinha Insurance & Financial Solutions provides trusted Life, Health, Motor Insurance and Loan services in Agra with expert guidance.">
+<meta name="keywords" content="Insurance Agra, Loan Services, Health Insurance, Life Insurance, Motor Insurance, Financial Advisor Agra">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-:root{
-  --dark:#0f172a;
-  --dark2:#1e293b;
-  --gold:#d4af37;
-  --light:#f8fafc;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 body{
-  margin:0;
   font-family:'Roboto',sans-serif;
-  background:linear-gradient(135deg,#020617,#0f172a);
-  color:#e5e7eb;
-  overflow-x:hidden;
+  background:#f5f7fb;
+  color:#333;
+  line-height:1.6;
 }
 
+/* HEADER */
 header{
-  background:linear-gradient(90deg,#020617,#0f172a,#020617);
+  background:linear-gradient(120deg,#001f3f,#003f7f);
+  color:#fff;
   padding:90px 20px;
   text-align:center;
-  position:relative;
-}
-
-header::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:url("https://images.unsplash.com/photo-1554224155-6726b3ff858f") center/cover;
-  opacity:.12;
 }
 
 header h1{
   font-family:'Playfair Display',serif;
   font-size:52px;
-  color:var(--gold);
-  position:relative;
+  margin-bottom:15px;
 }
 
 header p{
   font-size:22px;
-  color:#e5e7eb;
-  position:relative;
-}
-
-section{
-  padding:80px 20px;
-  max-width:1200px;
+  max-width:800px;
   margin:auto;
 }
 
-h2{
-  text-align:center;
-  font-family:'Playfair Display',serif;
-  font-size:38px;
-  color:var(--gold);
-  margin-bottom:50px;
-}
-
-.services,.why,.process{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:35px;
-}
-
-.card{
-  background:linear-gradient(180deg,#020617,#020617);
-  border-radius:20px;
-  padding:35px;
-  text-align:center;
-  border-top:4px solid var(--gold);
-  box-shadow:0 12px 40px rgba(0,0,0,.6);
-  transition:.4s;
-}
-
-.card:hover{
-  transform:translateY(-10px);
-}
-
-.card h3{
-  color:var(--gold);
-  margin-bottom:15px;
-}
-
-.card p{
-  color:#cbd5f5;
-}
-
-.about,.calculator,.location,.enquiry-form{
-  background:linear-gradient(180deg,#020617,#020617);
-  border-radius:20px;
-  padding:50px;
-  box-shadow:0 12px 40px rgba(0,0,0,.6);
-  border-top:4px solid var(--gold);
-}
-
-.calculator input,
-.enquiry-form input,
-.enquiry-form textarea{
-  width:100%;
-  padding:16px;
-  margin-bottom:15px;
-  border-radius:10px;
-  border:2px solid #334155;
-  background:#020617;
-  color:#fff;
-}
-
-button{
-  width:100%;
-  padding:16px;
-  border:none;
-  border-radius:10px;
-  background:linear-gradient(90deg,var(--gold),#f5cc5c);
-  font-weight:700;
-  cursor:pointer;
-}
-
-.location iframe{
-  width:100%;
-  height:300px;
-  border-radius:12px;
-  border:none;
-  margin-top:25px;
-}
-
-.contact{
-  background:linear-gradient(90deg,#020617,#0f172a);
-  text-align:center;
-  padding:80px 20px;
-}
-
-.contact a{
-  color:var(--gold);
-  text-decoration:none;
-  font-weight:bold;
-}
-
-footer{
-  background:#020617;
-  text-align:center;
-  padding:25px;
-}
-
-/* Floating buttons */
-.float{
-  position:fixed;
-  right:20px;
-  padding:16px 22px;
-  border-radius:50px;
-  color:#fff;
-  font-weight:bold;
-  text-decoration:none;
-  box-shadow:0 10px 30px rgba(0,0,0,.6);
+/* NAV */
+nav{
+  background:#001f3f;
+  position:sticky;
+  top:0;
   z-index:999;
 }
 
-.call{bottom:110px;background:#1e293b;}
-.whatsapp{bottom:35px;background:#25D366;}
+nav ul{
+  display:flex;
+  justify-content:center;
+  list-style:none;
+  padding:15px;
+  flex-wrap:wrap;
+}
 
+nav ul li{
+  margin:0 15px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav ul li a:hover{
+  color:#ffd700;
+}
+
+/* SECTION */
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+section h2{
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  font-size:38px;
+  color:#001f3f;
+  margin-bottom:50px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
+}
+
+/* CARD */
+.card{
+  background:#fff;
+  padding:35px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 10px 35px rgba(0,0,0,0.1);
+  transition:0.3s;
+  border-top:5px solid #ffd700;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card i{
+  font-size:45px;
+  color:#001f3f;
+  margin-bottom:20px;
+}
+
+.card h3{
+  margin-bottom:15px;
+  color:#001f3f;
+}
+
+/* ABOUT */
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.about img{
+  width:100%;
+  border-radius:20px;
+}
+
+.about p{
+  font-size:18px;
+}
+
+/* PROCESS */
+.step{
+  background:#fff;
+  padding:30px;
+  border-left:6px solid #001f3f;
+  border-radius:10px;
+  box-shadow:0 6px 25px rgba(0,0,0,0.08);
+}
+
+.step h4{
+  margin-bottom:10px;
+  color:#001f3f;
+}
+
+/* CONTACT */
+.contact-box{
+  background:#001f3f;
+  color:white;
+  padding:50px;
+  border-radius:20px;
+  text-align:center;
+}
+
+.contact-box a{
+  display:inline-block;
+  margin-top:20px;
+  padding:15px 35px;
+  background:#ffd700;
+  color:#001f3f;
+  text-decoration:none;
+  font-weight:600;
+  border-radius:30px;
+}
+
+/* FOOTER */
+footer{
+  background:#001f3f;
+  color:white;
+  padding:40px 20px;
+  text-align:center;
+}
+
+/* RESPONSIVE */
 @media(max-width:768px){
-  header h1{font-size:38px}
-  header p{font-size:18px}
+  header h1{font-size:40px;}
+  .about{grid-template-columns:1fr;}
 }
 </style>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init({duration:900,once:true});
-
-function calculateLoan(){
- const a=parseFloat(loanAmount.value);
- const r=parseFloat(interestRate.value)/100/12;
- const t=parseFloat(loanTerm.value)*12;
- if(a>0&&r>0&&t>0){
-  const m=(a*r*Math.pow(1+r,t))/(Math.pow(1+r,t)-1);
-  result.innerHTML="Monthly Payment: ₹"+m.toFixed(2);
- }else{
-  result.innerHTML="Please enter valid numbers";
- }
-}
-</script>
 </head>
 
 <body>
 
 <header>
-<h1>Sinha Insurance & Financial Solutions</h1>
-<p>Your Trusted Partner for Insurance & Loans in Agra</p>
+  <h1>Sinha Insurance & Financial Solutions</h1>
+  <p>Your Trusted Partner for Insurance & Loan Solutions in Agra</p>
 </header>
 
-<section class="about" data-aos="fade-up">
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="about">
 <h2>About Us</h2>
-<p>With over a decade of experience, we provide trusted insurance & loan solutions with complete transparency.</p>
+<div class="about">
+  <div>
+    <p>
+      Sinha Insurance & Financial Solutions is committed to providing
+      reliable insurance and loan services tailored to your needs.
+      With years of experience, we help individuals and businesses
+      secure their future with confidence.
+    </p>
+    <p>
+      Transparency, trust and customer satisfaction are at the core
+      of everything we do.
+    </p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1556742031-c6961e8560b0" alt="Financial Consulting">
+</div>
 </section>
 
-<section data-aos="fade-up">
+<section id="services">
 <h2>Our Services</h2>
-<div class="services">
-<div class="card"><h3>Life Insurance</h3><p>Secure your family’s future.</p></div>
-<div class="card"><h3>Health Insurance</h3><p>Medical protection you can trust.</p></div>
-<div class="card"><h3>Motor Insurance</h3><p>Complete vehicle coverage.</p></div>
-<div class="card"><h3>Home Insurance</h3><p>Protect your property.</p></div>
-<div class="card"><h3>Business Insurance</h3><p>Secure your business.</p></div>
-<div class="card"><h3>Loans</h3><p>Personal & Business loans.</p></div>
+<div class="grid">
+  <div class="card">
+    <i class="fa-solid fa-heart-pulse"></i>
+    <h3>Health Insurance</h3>
+    <p>Comprehensive medical coverage for you and your family.</p>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-user-shield"></i>
+    <h3>Life Insurance</h3>
+    <p>Secure your family’s future with trusted life plans.</p>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-car"></i>
+    <h3>Motor Insurance</h3>
+    <p>Protection for cars and bikes with hassle-free claims.</p>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-building"></i>
+    <h3>Business Insurance</h3>
+    <p>Customized insurance solutions for businesses.</p>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-hand-holding-dollar"></i>
+    <h3>Personal Loans</h3>
+    <p>Quick and easy loans with minimal documentation.</p>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-chart-line"></i>
+    <h3>Financial Advisory</h3>
+    <p>Expert advice to grow and manage your finances.</p>
+  </div>
 </div>
 </section>
 
-<section data-aos="fade-up">
-<h2>Loan Calculator</h2>
-<div class="calculator">
-<input id="loanAmount" placeholder="Loan Amount ₹">
-<input id="interestRate" placeholder="Interest Rate %">
-<input id="loanTerm" placeholder="Term (Years)">
-<button onclick="calculateLoan()">Calculate</button>
-<p id="result"></p>
+<section id="process">
+<h2>Our Process</h2>
+<div class="grid">
+  <div class="step">
+    <h4>Step 1: Consultation</h4>
+    <p>Understand your needs and financial goals.</p>
+  </div>
+  <div class="step">
+    <h4>Step 2: Planning</h4>
+    <p>Create a customized solution for you.</p>
+  </div>
+  <div class="step">
+    <h4>Step 3: Execution</h4>
+    <p>Fast processing and documentation.</p>
+  </div>
+  <div class="step">
+    <h4>Step 4: Support</h4>
+    <p>Ongoing assistance whenever you need.</p>
+  </div>
 </div>
 </section>
 
-<section class="location" data-aos="fade-up">
-<h2>Location</h2>
-<p>📍 F-164, Kamla Nagar, Agra</p>
-<iframe src="https://www.google.com/maps?q=F-164%20Kamla%20Nagar%20Agra&output=embed"></iframe>
-</section>
-
-<section class="contact">
-<p>📞 <a href="tel:8923115722">8923115722</a> | <a href="tel:9410009682">9410009682</a></p>
-<p>💬 <a href="https://wa.me/919410009682" target="_blank">WhatsApp Us</a></p>
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="contact-box">
+  <p>📍 Agra, Uttar Pradesh</p>
+  <p>📞 +91 XXXXXXXXXX</p>
+  <p>✉️ sinhasolutions@email.com</p>
+  <a href="tel:+91XXXXXXXXXX">Call Now</a>
+</div>
 </section>
 
 <footer>
-© 2026 Sinha Insurance & Financial Solutions
+  <p>© 2026 Sinha Insurance & Financial Solutions. All Rights Reserved.</p>
 </footer>
-
-<a class="float call" href="tel:8923115722">📞 Call</a>
-<a class="float whatsapp" href="https://wa.me/919410009682">💬 WhatsApp</a>
 
 </body>
 </html>
