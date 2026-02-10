@@ -9,19 +9,19 @@
 <meta name="description" content="Expert insurance and loan services in Agra. Comprehensive life, health, motor, home, and business insurance, plus personal and business loans with personalized guidance.">
 <meta name="keywords" content="insurance Agra, loans Agra, life insurance, health insurance, motor insurance, home insurance, business loans, financial solutions">
 <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon"> <!-- Replace with actual favicon URL -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!-- Premium font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet"> <!-- Premium fonts -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
 <style>
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #f0f8f0 0%, #e0f2e0 100%);
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   color: #333;
   line-height: 1.6;
 }
 
 header {
-  background: linear-gradient(90deg, #2E8B57, #32CD32, #006400);
+  background: linear-gradient(90deg, #001f3f, #003366, #001f3f);
   color: white;
   padding: 80px 20px;
   text-align: center;
@@ -36,8 +36,8 @@ header::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover; /* Hero image: Insurance/finance related */
-  opacity: 0.2;
+  background: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover; /* Hero image: Insurance related */
+  opacity: 0.15;
   z-index: 1;
 }
 
@@ -48,179 +48,195 @@ header h1, header p {
 
 header h1 {
   margin: 0;
-  font-size: 48px;
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
 }
 
 header p {
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 22px;
+  margin-top: 15px;
   font-weight: 300;
 }
 
 section {
-  padding: 60px 20px;
+  padding: 70px 20px;
   max-width: 1200px;
   margin: auto;
 }
 
 h2 {
   text-align: center;
-  color: #2E8B57;
-  font-size: 32px;
+  color: #001f3f;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   position: relative;
 }
 
 h2::after {
   content: '';
   display: block;
-  width: 60px;
+  width: 70px;
   height: 4px;
-  background: linear-gradient(90deg, #32CD32, #006400);
-  margin: 10px auto;
+  background: linear-gradient(90deg, #ffd700, #ffb347);
+  margin: 15px auto;
 }
 
-.services, .why, .process, .faq, .testimonials, .partners {
+.services, .why, .process, .faq, .testimonials {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+  margin-top: 30px;
 }
 
 .card {
   background: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
   text-align: center;
   position: relative;
+  border-top: 5px solid #ffd700;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.2);
 }
 
 .card img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 25px;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .card h3 {
-  color: #2E8B57;
-  font-size: 24px;
-  margin-bottom: 15px;
+  color: #001f3f;
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .card p {
-  font-size: 16px;
+  font-size: 17px;
   color: #666;
 }
 
 .testimonials .card {
   text-align: left;
-  padding-left: 80px;
+  padding-left: 90px;
 }
 
 .testimonials .card::before {
   content: '"';
-  font-size: 48px;
-  color: #32CD32;
+  font-size: 50px;
+  color: #ffd700;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 25px;
+  left: 25px;
+  font-family: 'Playfair Display', serif;
 }
 
 .about {
-  background: #f9f9f9;
-  border-radius: 15px;
-  padding: 40px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 20px;
+  padding: 50px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .about img {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .calculator {
   background: white;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
-  max-width: 600px;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  max-width: 650px;
   margin: auto;
+  border-top: 5px solid #ffd700;
 }
 
 .calculator input, .calculator button {
   width: 100%;
-  padding: 15px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 17px;
+  transition: border-color 0.3s ease;
+}
+
+.calculator input:focus {
+  border-color: #ffd700;
+  outline: none;
 }
 
 .calculator button {
-  background: #32CD32;
+  background: linear-gradient(90deg, #001f3f, #003366);
   color: white;
   border: none;
   cursor: pointer;
   font-weight: 600;
+  font-size: 18px;
   transition: background 0.3s ease;
 }
 
 .calculator button:hover {
-  background: #2E8B57;
+  background: linear-gradient(90deg, #003366, #001f3f);
 }
 
 .newsletter {
-  background: linear-gradient(90deg, #2E8B57, #006400);
+  background: linear-gradient(90deg, #001f3f, #003366);
   color: white;
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
 .newsletter input {
-  padding: 15px;
-  width: 300px;
+  padding: 18px;
+  width: 320px;
   border: none;
-  border-radius: 8px;
-  margin-right: 10px;
+  border-radius: 10px;
+  margin-right: 15px;
+  font-size: 16px;
 }
 
 .newsletter button {
-  padding: 15px 20px;
-  background: #32CD32;
-  color: white;
+  padding: 18px 25px;
+  background: #ffd700;
+  color: #001f3f;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   font-weight: 600;
+  font-size: 16px;
+  transition: background 0.3s ease;
 }
 
-.partners img {
-  width: 100px;
-  height: 50px;
-  object-fit: contain;
-  margin: 10px;
+.newsletter button:hover {
+  background: #ffb347;
 }
 
 .contact {
-  background: linear-gradient(90deg, #2E8B57, #006400);
+  background: linear-gradient(90deg, #001f3f, #003366);
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 
 .contact a {
@@ -231,76 +247,99 @@ h2::after {
 }
 
 .contact a:hover {
-  color: #fff;
+  color: #ffb347;
 }
 
 .contact-form {
-  max-width: 600px;
-  margin: 40px auto;
+  max-width: 650px;
+  margin: 50px auto;
   background: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  border-top: 5px solid #ffd700;
 }
 
 .contact-form input, .contact-form textarea, .contact-form button {
   width: 100%;
-  padding: 15px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 17px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #ffd700;
+  outline: none;
 }
 
 .contact-form button {
-  background: #32CD32;
+  background: linear-gradient(90deg, #001f3f, #003366);
   color: white;
   border: none;
   cursor: pointer;
   font-weight: 600;
+  font-size: 18px;
   transition: background 0.3s ease;
 }
 
 .contact-form button:hover {
-  background: #2E8B57;
+  background: linear-gradient(90deg, #003366, #001f3f);
 }
 
 footer {
-  background: #006400;
+  background: #001f3f;
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 14px;
+  padding: 25px;
+  font-size: 15px;
 }
 
 .float-btn {
   position: fixed;
-  right: 20px;
-  padding: 15px 20px;
+  right: 25px;
+  padding: 18px 22px;
   border-radius: 50px;
   color: white;
   font-weight: bold;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1000;
 }
 
 .float-btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
 
-.call-btn { bottom: 100px; background: #32CD32; }
-.whatsapp-btn { bottom: 30px; background: #25D366; }
+.call-btn { bottom: 110px; background: linear-gradient(90deg, #001f3f, #003366); }
+.whatsapp-btn { bottom: 35px; background: #25D366; }
 
 @media (max-width: 768px) {
-  header h1 { font-size: 36px; }
-  header p { font-size: 18px; }
-  .services, .why, .process, .faq, .testimonials, .partners { grid-template-columns: 1fr; }
-  .float-btn { right: 10px; padding: 12px 16px; }
-  .newsletter input { width: 250px; }
+  header h1 { font-size: 40px; }
+  header p { font-size: 20px; }
+  .services, .why, .process, .faq, .testimonials { grid-template-columns: 1fr; }
+  .float-btn { right: 15px; padding: 15px 18px; }
+  .newsletter input { width: 280px; }
 }
 </style>
+<script>
+function calculateLoan() {
+  const amount = document.getElementById('loanAmount').value;
+  const rate = document.getElementById('interestRate').value / 100 / 12;
+  const term = document.getElementById('loanTerm').value * 12;
+  const result = document.getElementById('result');
+  if (amount && rate && term) {
+    const monthly = (amount * rate * Math.pow(1 + rate, term)) / (Math.pow(1 + rate, term) - 1);
+    result.innerHTML = `Monthly Payment: ₹${monthly.toFixed(2)}`;
+  } else {
+    result.innerHTML = 'Please fill all fields.';
+  }
+}
+</script>
 </head>
 
 <body>
@@ -368,22 +407,22 @@ footer {
   <h2>Why Choose Us</h2>
   <div class="why">
     <div class="card">
-      <i class="fas fa-handshake fa-3x" style="color: #32CD32; margin-bottom: 20px;"></i>
+      <i class="fas fa-handshake fa-4x" style="color: #ffd700; margin-bottom: 25px;"></i>
       <h3>Honest & Transparent Guidance</h3>
       <p>We provide clear, unbiased advice to help you make informed decisions without hidden agendas.</p>
     </div>
     <div class="card">
-      <i class="fas fa-clock fa-3x" style="color: #32CD32; margin-bottom: 20px;"></i>
+      <i class="fas fa-clock fa-4x" style="color: #ffd700; margin-bottom: 25px;"></i>
       <h3>Fast & Efficient Processing</h3>
       <p>Streamlined processes ensure quick approvals for policies and loans, saving you time and effort.</p>
     </div>
     <div class="card">
-      <i class="fas fa-shield-alt fa-3x" style="color: #32CD32; margin-bottom: 20px;"></i>
+      <i class="fas fa-shield-alt fa-4x" style="color: #ffd700; margin-bottom: 25px;"></i>
       <h3>Full Claim Support</h3>
       <p>Our dedicated team assists with every step of the claims process for a smooth and stress-free experience.</p>
     </div>
     <div class="card">
-      <i class="fas fa-wallet fa-3x" style="color: #32CD32; margin-bottom: 20px;"></i>
+      <i class="fas fa-wallet fa-4x" style="color: #ffd700; margin-bottom: 25px;"></i>
       <h3>Budget-Friendly Plans</h3>
       <p>Tailored solutions that fit your financial situation, ensuring affordability without compromising coverage.</p>
     </div>
@@ -424,51 +463,4 @@ footer {
       <cite>- A Happy Customer</cite>
     </div>
     <div class="card">
-      <p>"Transparent and honest service. They made getting motor insurance so easy."</p>
-      <cite>- A Valued Client</cite>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Our Partners</h2>
-  <div class="partners">
-    <img src="https://via.placeholder.com/100x50/32CD32/FFFFFF?text=Partner1" alt="Partner 1">
-    <img src="https://via.placeholder.com/100x50/2E8B57/FFFFFF?text=Partner2" alt="Partner 2">
-    <img src="https://via.placeholder.com/100x50/006400/FFFFFF?text=Partner3" alt="Partner 3">
-    <!-- Replace with actual partner logos -->
-  </div>
-</section>
-
-<section>
-  <h2>Frequently Asked Questions</h2>
-  <div class="faq">
-    <div class="card">
-      <h3>Which insurance is best for my family?</h3>
-      <p>A combination of health and life insurance provides comprehensive protection against medical emergencies and financial loss.</p>
-    </div>
-    <div class="card">
-      <h3>How long does loan approval take?</h3>
-      <p>Most loans are processed and approved within 2-5 working days, depending on documentation and lender requirements.</p>
-    </div>
-    <div class="card">
-      <h3>Do you assist with claim settlements?</h3>
-      <p>Yes, we provide end-to-end support, including documentation and liaison with insurers for hassle-free claims.</p>
-    </div>
-    <div class="card">
-      <h3>Are your services available online?</h3>
-      <p>Absolutely! We offer virtual consultations and online applications for your convenience.</p>
-    </div>
-  </div>
-</section>
-
-<div class="newsletter">
-  <h2>Stay Updated</h2>
-  <p>Subscribe to our newsletter for the latest tips on insurance and loans.</p>
-  <input type="email" placeholder="Enter your email">
-  <button>Subscribe</button>
-</div>
-
-<div class="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Address:</strong> F-164
+      <p>"Transparent and honest service. They made getting motor insurance
