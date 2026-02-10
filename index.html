@@ -1,466 +1,300 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="mqPwTqN36L5NeoK9C8ml8R6mkR03UfwYVkhsQgtwIYs" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sinha Insurance & Financial Solutions - Trusted Insurance and Loan Services in Agra</title>
-<meta name="description" content="Expert insurance and loan services in Agra. Comprehensive life, health, motor, home, and business insurance, plus personal and business loans with personalized guidance.">
-<meta name="keywords" content="insurance Agra, loans Agra, life insurance, health insurance, motor insurance, home insurance, business loans, financial solutions">
-<link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon"> <!-- Replace with actual favicon URL -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet"> <!-- Premium fonts -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
+<title>Premium Business Website</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  color: #333;
-  line-height: 1.6;
+:root{
+  --gold:#c9a14a;
+  --dark:#0f172a;
+  --light:#f8fafc;
 }
 
-header {
-  background: linear-gradient(90deg, #001f3f, #003366, #001f3f);
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
 }
 
-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover; /* Hero image: Insurance related */
-  opacity: 0.15;
-  z-index: 1;
+body{
+  background:var(--dark);
+  color:var(--light);
+  line-height:1.6;
 }
 
-header h1, header p {
-  position: relative;
-  z-index: 2;
+/* ---------- ANIMATIONS ---------- */
+.animate{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 0.9s ease;
+}
+.animate.show{
+  opacity:1;
+  transform:translateY(0);
 }
 
-header h1 {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  font-size: 52px;
-  font-weight: 700;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+/* ---------- HEADER ---------- */
+header{
+  padding:25px 10%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  background:rgba(15,23,42,0.9);
+  backdrop-filter:blur(8px);
+  z-index:999;
 }
 
-header p {
-  font-size: 22px;
-  margin-top: 15px;
-  font-weight: 300;
+header h1{
+  font-family:'Playfair Display', serif;
+  color:var(--gold);
+  font-size:28px;
 }
 
-section {
-  padding: 70px 20px;
-  max-width: 1200px;
-  margin: auto;
+nav a{
+  margin-left:25px;
+  color:var(--light);
+  text-decoration:none;
+  font-weight:500;
+}
+nav a:hover{
+  color:var(--gold);
 }
 
-h2 {
-  text-align: center;
-  color: #001f3f;
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  font-weight: 600;
-  margin-bottom: 50px;
-  position: relative;
+/* ---------- HERO ---------- */
+.hero{
+  min-height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:0 10%;
+  background:linear-gradient(135deg,#020617,#0f172a);
 }
 
-h2::after {
-  content: '';
-  display: block;
-  width: 70px;
-  height: 4px;
-  background: linear-gradient(90deg, #ffd700, #ffb347);
-  margin: 15px auto;
+.hero h2{
+  font-family:'Playfair Display', serif;
+  font-size:48px;
+  margin-bottom:20px;
+}
+.hero span{
+  color:var(--gold);
+}
+.hero p{
+  max-width:650px;
+  margin:auto;
+  font-size:18px;
+  opacity:0.9;
 }
 
-.services, .why, .process, .faq, .testimonials {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 35px;
-  margin-top: 30px;
+/* ---------- SECTIONS ---------- */
+section{
+  padding:80px 10%;
 }
 
-.card {
-  background: white;
-  padding: 35px;
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  text-align: center;
-  position: relative;
-  border-top: 5px solid #ffd700;
+section h2{
+  font-family:'Playfair Display', serif;
+  font-size:36px;
+  color:var(--gold);
+  margin-bottom:30px;
+  text-align:center;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+/* ---------- SERVICES ---------- */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+.card{
+  background:#020617;
+  padding:30px;
+  border-radius:16px;
+  text-align:center;
+  transition:0.4s;
+}
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.5);
+}
+.card h3{
+  margin-bottom:10px;
+  color:var(--gold);
 }
 
-.card img {
-  width: 90px;
-  height: 90px;
-  margin-bottom: 25px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+/* ---------- CONTACT ---------- */
+.contact-info{
+  text-align:center;
+  font-size:18px;
+}
+.contact-info a{
+  color:var(--gold);
+  text-decoration:none;
+  font-weight:500;
 }
 
-.card h3 {
-  color: #001f3f;
-  font-size: 26px;
-  margin-bottom: 20px;
-  font-weight: 600;
+.map{
+  margin-top:40px;
+  border-radius:18px;
+  overflow:hidden;
 }
 
-.card p {
-  font-size: 17px;
-  color: #666;
+/* ---------- ENQUIRY FORM ---------- */
+form{
+  max-width:600px;
+  margin:50px auto 0;
+  display:grid;
+  gap:15px;
+}
+input, textarea{
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  outline:none;
+}
+button{
+  padding:15px;
+  background:var(--gold);
+  border:none;
+  border-radius:10px;
+  font-size:16px;
+  cursor:pointer;
+  font-weight:600;
+}
+button:hover{
+  background:#b8903d;
 }
 
-.testimonials .card {
-  text-align: left;
-  padding-left: 90px;
+/* ---------- FLOATING BUTTONS ---------- */
+.float{
+  position:fixed;
+  right:20px;
+  padding:12px 18px;
+  border-radius:50px;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  z-index:999;
+}
+.whatsapp{
+  bottom:80px;
+  background:#25d366;
+}
+.call{
+  bottom:20px;
+  background:#2563eb;
 }
 
-.testimonials .card::before {
-  content: '"';
-  font-size: 50px;
-  color: #ffd700;
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  font-family: 'Playfair Display', serif;
+/* ---------- FOOTER ---------- */
+footer{
+  text-align:center;
+  padding:25px;
+  background:#020617;
+  margin-top:80px;
+  font-size:14px;
+  opacity:0.8;
 }
 
-.about {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border-radius: 20px;
-  padding: 50px;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.about img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  margin-bottom: 25px;
-  object-fit: cover;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}
-
-.calculator {
-  background: white;
-  padding: 50px;
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-  max-width: 650px;
-  margin: auto;
-  border-top: 5px solid #ffd700;
-}
-
-.calculator input, .calculator button {
-  width: 100%;
-  padding: 18px;
-  margin-bottom: 18px;
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  font-size: 17px;
-  transition: border-color 0.3s ease;
-}
-
-.calculator input:focus {
-  border-color: #ffd700;
-  outline: none;
-}
-
-.calculator button {
-  background: linear-gradient(90deg, #001f3f, #003366);
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 18px;
-  transition: background 0.3s ease;
-}
-
-.calculator button:hover {
-  background: linear-gradient(90deg, #003366, #001f3f);
-}
-
-.newsletter {
-  background: linear-gradient(90deg, #001f3f, #003366);
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.newsletter input {
-  padding: 18px;
-  width: 320px;
-  border: none;
-  border-radius: 10px;
-  margin-right: 15px;
-  font-size: 16px;
-}
-
-.newsletter button {
-  padding: 18px 25px;
-  background: #ffd700;
-  color: #001f3f;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 16px;
-  transition: background 0.3s ease;
-}
-
-.newsletter button:hover {
-  background: #ffb347;
-}
-
-.contact {
-  background: linear-gradient(90deg, #001f3f, #003366);
-  color: white;
-  text-align: center;
-  padding: 70px 20px;
-}
-
-.contact a {
-  color: #ffd700;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.contact a:hover {
-  color: #ffb347;
-}
-
-.contact-form {
-  max-width: 650px;
-  margin: 50px auto;
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-  border-top: 5px solid #ffd700;
-}
-
-.contact-form input, .contact-form textarea, .contact-form button {
-  width: 100%;
-  padding: 18px;
-  margin-bottom: 18px;
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  font-size: 17px;
-  transition: border-color 0.3s ease;
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-  border-color: #ffd700;
-  outline: none;
-}
-
-.contact-form button {
-  background: linear-gradient(90deg, #001f3f, #003366);
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 18px;
-  transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
-  background: linear-gradient(90deg, #003366, #001f3f);
-}
-
-footer {
-  background: #001f3f;
-  color: white;
-  text-align: center;
-  padding: 25px;
-  font-size: 15px;
-}
-
-.float-btn {
-  position: fixed;
-  right: 25px;
-  padding: 18px 22px;
-  border-radius: 50px;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  z-index: 1000;
-}
-
-.float-btn:hover {
-  transform: scale(1.08);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-}
-
-.call-btn { bottom: 110px; background: linear-gradient(90deg, #001f3f, #003366); }
-.whatsapp-btn { bottom: 35px; background: #25D366; }
-
-@media (max-width: 768px) {
-  header h1 { font-size: 40px; }
-  header p { font-size: 20px; }
-  .services, .why, .process, .faq, .testimonials { grid-template-columns: 1fr; }
-  .float-btn { right: 15px; padding: 15px 18px; }
-  .newsletter input { width: 280px; }
+/* ---------- MOBILE ---------- */
+@media(max-width:768px){
+  .hero h2{font-size:34px;}
+  header{flex-direction:column;}
+  nav{margin-top:10px;}
 }
 </style>
-<script>
-function calculateLoan() {
-  const amount = document.getElementById('loanAmount').value;
-  const rate = document.getElementById('interestRate').value / 100 / 12;
-  const term = document.getElementById('loanTerm').value * 12;
-  const result = document.getElementById('result');
-  if (amount && rate && term) {
-    const monthly = (amount * rate * Math.pow(1 + rate, term)) / (Math.pow(1 + rate, term) - 1);
-    result.innerHTML = `Monthly Payment: ₹${monthly.toFixed(2)}`;
-  } else {
-    result.innerHTML = 'Please fill all fields.';
-  }
-}
-</script>
 </head>
 
 <body>
 
 <header>
-  <h1>Sinha Insurance & Financial Solutions</h1>
-  <p>Your Trusted Partner for Comprehensive Insurance & Loan Services in Agra</p>
+  <h1>Royal Business</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<section class="about">
-  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team Photo"> <!-- Placeholder team image -->
-  <h2>About Us</h2>
-  <p>With over a decade of experience, Sinha Insurance & Financial Solutions specializes in providing tailored insurance and loan services. Our team of experts ensures you get the best coverage and financial support, backed by integrity and innovation.</p>
+<section class="hero animate" id="home">
+  <div>
+    <h2>We Build <span>Premium</span> Digital Experiences</h2>
+    <p>Professional, modern and royal-looking solutions designed for trust, growth and success.</p>
+  </div>
 </section>
 
-<section>
+<section id="services" class="animate">
   <h2>Our Services</h2>
   <div class="services">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Life Insurance">
-      <h3>Life Insurance</h3>
-      <p>Secure your family's future with tailored life insurance plans that offer financial protection and peace of mind.</p>
+      <h3>Web Development</h3>
+      <p>Fast, responsive & premium websites.</p>
     </div>
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Health Insurance">
-      <h3>Health Insurance</h3>
-      <p>Comprehensive health coverage for medical emergencies, hospitalization, and preventive care at affordable rates.</p>
+      <h3>App Solutions</h3>
+      <p>Modern Android & digital solutions.</p>
     </div>
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Motor Insurance">
-      <h3>Motor Insurance</h3>
-      <p>Protect your vehicle with third-party and comprehensive motor insurance, including roadside assistance.</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Home Insurance">
-      <h3>Home Insurance</h3>
-      <p>Safeguard your property against damage, theft, and natural disasters with flexible home insurance options.</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Business Insurance">
-      <h3>Business Insurance</h3>
-      <p>Customized insurance for businesses, covering liabilities, property, and employee benefits to ensure continuity.</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Loans">
-      <h3>Personal & Business Loans</h3>
-      <p>Quick and hassle-free loans for personal needs or business expansion, with competitive interest rates.</p>
+      <h3>Support</h3>
+      <p>Reliable long-term technical support.</p>
     </div>
   </div>
 </section>
 
-<section>
-  <h2>Loan Calculator</h2>
-  <div class="calculator">
-    <h3>Estimate Your Loan</h3>
-    <input type="number" id="loanAmount" placeholder="Loan Amount (₹)">
-    <input type="number" id="interestRate" placeholder="Interest Rate (%)">
-    <input type="number" id="loanTerm" placeholder="Term (Years)">
-    <button onclick="calculateLoan()">Calculate</button>
-    <p id="result"></p>
+<section id="contact" class="animate">
+  <h2>Contact & Location</h2>
+
+  <div class="contact-info">
+    📍 <strong>F-164, Kamla Nagar, Agra</strong><br><br>
+    📞 Call:
+    <a href="tel:8923115722">8923115722</a> |
+    <a href="tel:9410009682">9410009682</a><br><br>
+    💬 WhatsApp:
+    <a href="https://wa.me/919410009682" target="_blank">9410009682</a>
   </div>
+
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps?q=F-164%20Kamla%20Nagar%20Agra&output=embed"
+      width="100%"
+      height="350"
+      style="border:0"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Enquiry"></textarea>
+    <button type="submit">Send Enquiry</button>
+  </form>
 </section>
 
-<section>
-  <h2>Why Choose Us</h2>
-  <div class="why">
-    <div class="card">
-      <i class="fas fa-handshake fa-4x" style="color: #ffd700; margin-bottom: 25px;"></i>
-      <h3>Honest & Transparent Guidance</h3>
-      <p>We provide clear, unbiased advice to help you make informed decisions without hidden agendas.</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-clock fa-4x" style="color: #ffd700; margin-bottom: 25px;"></i>
-      <h3>Fast & Efficient Processing</h3>
-      <p>Streamlined processes ensure quick approvals for policies and loans, saving you time and effort.</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-shield-alt fa-4x" style="color: #ffd700; margin-bottom: 25px;"></i>
-      <h3>Full Claim Support</h3>
-      <p>Our dedicated team assists with every step of the claims process for a smooth and stress-free experience.</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-wallet fa-4x" style="color: #ffd700; margin-bottom: 25px;"></i>
-      <h3>Budget-Friendly Plans</h3>
-      <p>Tailored solutions that fit your financial situation, ensuring affordability without compromising coverage.</p>
-    </div>
-  </div>
-</section>
+<footer>
+  © 2026 Royal Business. All Rights Reserved.
+</footer>
 
-<section>
-  <h2>How We Help You</h2>
-  <div class="process">
-    <div class="card">
-      <h3>1. Understand Your Needs</h3>
-      <p>We listen to your requirements and assess your financial goals to recommend the best options.</p>
-    </div>
-    <div class="card">
-      <h3>2. Suggest the Best Plan</h3>
-      <p>Based on expert analysis, we propose customized plans from top insurers and lenders.</p>
-    </div>
-    <div class="card">
-      <h3>3. Complete Documentation</h3>
-      <p>Our team handles all paperwork and submissions to ensure a seamless application process.</p>
-    </div>
-    <div class="card">
-      <h3>4. Lifetime Support</h3>
-      <p>Enjoy ongoing assistance, policy reviews, and claim support for the long term.</p>
-    </div>
-  </div>
-</section>
+<!-- FLOATING BUTTONS -->
+<a href="tel:8923115722" class="float call">📞 Call</a>
+<a href="https://wa.me/919410009682" class="float whatsapp" target="_blank">💬 WhatsApp</a>
 
-<section>
-  <h2>What Our Clients Say</h2>
-  <div class="testimonials">
-    <div class="card">
-      <p>"Sinha Insurance helped me secure the perfect health plan for my family. Their guidance was invaluable!"</p>
-      <cite>- A Satisfied Client</cite>
-    </div>
-    <div class="card">
-      <p>"Fast loan approval and excellent support throughout. Highly recommend for business loans."</p>
-      <cite>- A Happy Customer</cite>
-    </div>
-    <div class="card">
-      <p>"Transparent and honest service. They made getting motor insurance
+<script>
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+document.querySelectorAll(".animate").forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
