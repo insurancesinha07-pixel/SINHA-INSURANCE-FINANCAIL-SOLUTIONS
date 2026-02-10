@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,20 +9,21 @@
 <meta name="description" content="Expert insurance and loan services in Agra. Comprehensive life, health, motor, home, and business insurance, plus personal and business loans with personalized guidance.">
 <meta name="keywords" content="insurance Agra, loans Agra, life insurance, health insurance, motor insurance, home insurance, business loans, financial solutions">
 <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon"> <!-- Replace with actual favicon URL -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- Premium font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!-- Premium font -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
 <style>
 body {
   margin: 0;
-  font-family: 'Roboto', Arial, sans-serif;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f8f0 0%, #e0f2e0 100%);
   color: #333;
   line-height: 1.6;
 }
 
 header {
-  background: linear-gradient(90deg, #0f4c81, #1b6ca8, #2e8bc0);
+  background: linear-gradient(90deg, #2E8B57, #32CD32, #006400);
   color: white;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -34,8 +36,8 @@ header::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('https://example.com/hero-bg.jpg') no-repeat center center/cover; /* Replace with actual hero image URL */
-  opacity: 0.1;
+  background: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover; /* Hero image: Insurance/finance related */
+  opacity: 0.2;
   z-index: 1;
 }
 
@@ -65,9 +67,9 @@ section {
 
 h2 {
   text-align: center;
-  color: #0f4c81;
+  color: #2E8B57;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 40px;
   position: relative;
 }
@@ -75,13 +77,13 @@ h2 {
 h2::after {
   content: '';
   display: block;
-  width: 50px;
-  height: 3px;
-  background: #1b6ca8;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #32CD32, #006400);
   margin: 10px auto;
 }
 
-.services, .why, .process, .faq, .testimonials {
+.services, .why, .process, .faq, .testimonials, .partners {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
@@ -91,19 +93,28 @@ h2::after {
 .card {
   background: white;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  position: relative;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .card h3 {
-  color: #0f4c81;
+  color: #2E8B57;
   font-size: 24px;
   margin-bottom: 15px;
 }
@@ -115,24 +126,98 @@ h2::after {
 
 .testimonials .card {
   text-align: left;
+  padding-left: 80px;
 }
 
 .testimonials .card::before {
   content: '"';
   font-size: 48px;
-  color: #1b6ca8;
+  color: #32CD32;
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 20px;
 }
 
-.testimonials .card {
-  position: relative;
-  padding-left: 60px;
+.about {
+  background: #f9f9f9;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+}
+
+.about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.calculator {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.calculator input, .calculator button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.calculator button {
+  background: #32CD32;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.calculator button:hover {
+  background: #2E8B57;
+}
+
+.newsletter {
+  background: linear-gradient(90deg, #2E8B57, #006400);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.newsletter input {
+  padding: 15px;
+  width: 300px;
+  border: none;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.newsletter button {
+  padding: 15px 20px;
+  background: #32CD32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.partners img {
+  width: 100px;
+  height: 50px;
+  object-fit: contain;
+  margin: 10px;
 }
 
 .contact {
-  background: linear-gradient(90deg, #0f4c81, #092c4c);
+  background: linear-gradient(90deg, #2E8B57, #006400);
   color: white;
   text-align: center;
   padding: 60px 20px;
@@ -154,8 +239,8 @@ h2::after {
   margin: 40px auto;
   background: white;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
 }
 
 .contact-form input, .contact-form textarea, .contact-form button {
@@ -168,20 +253,20 @@ h2::after {
 }
 
 .contact-form button {
-  background: #1b6ca8;
+  background: #32CD32;
   color: white;
   border: none;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
   transition: background 0.3s ease;
 }
 
 .contact-form button:hover {
-  background: #0f4c81;
+  background: #2E8B57;
 }
 
 footer {
-  background: #092c4c;
+  background: #006400;
   color: white;
   text-align: center;
   padding: 20px;
@@ -205,14 +290,15 @@ footer {
   transform: scale(1.05);
 }
 
-.call-btn { bottom: 100px; background: #1b6ca8; }
+.call-btn { bottom: 100px; background: #32CD32; }
 .whatsapp-btn { bottom: 30px; background: #25D366; }
 
 @media (max-width: 768px) {
   header h1 { font-size: 36px; }
   header p { font-size: 18px; }
-  .services, .why, .process, .faq, .testimonials { grid-template-columns: 1fr; }
+  .services, .why, .process, .faq, .testimonials, .partners { grid-template-columns: 1fr; }
   .float-btn { right: 10px; padding: 12px 16px; }
+  .newsletter input { width: 250px; }
 }
 </style>
 </head>
@@ -224,30 +310,42 @@ footer {
   <p>Your Trusted Partner for Comprehensive Insurance & Loan Services in Agra</p>
 </header>
 
+<section class="about">
+  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team Photo"> <!-- Placeholder team image -->
+  <h2>About Us</h2>
+  <p>With over a decade of experience, Sinha Insurance & Financial Solutions specializes in providing tailored insurance and loan services. Our team of experts ensures you get the best coverage and financial support, backed by integrity and innovation.</p>
+</section>
+
 <section>
   <h2>Our Services</h2>
   <div class="services">
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Life Insurance">
       <h3>Life Insurance</h3>
       <p>Secure your family's future with tailored life insurance plans that offer financial protection and peace of mind.</p>
     </div>
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Health Insurance">
       <h3>Health Insurance</h3>
       <p>Comprehensive health coverage for medical emergencies, hospitalization, and preventive care at affordable rates.</p>
     </div>
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Motor Insurance">
       <h3>Motor Insurance</h3>
       <p>Protect your vehicle with third-party and comprehensive motor insurance, including roadside assistance.</p>
     </div>
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Home Insurance">
       <h3>Home Insurance</h3>
       <p>Safeguard your property against damage, theft, and natural disasters with flexible home insurance options.</p>
     </div>
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Business Insurance">
       <h3>Business Insurance</h3>
       <p>Customized insurance for businesses, covering liabilities, property, and employee benefits to ensure continuity.</p>
     </div>
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Loans">
       <h3>Personal & Business Loans</h3>
       <p>Quick and hassle-free loans for personal needs or business expansion, with competitive interest rates.</p>
     </div>
@@ -255,21 +353,37 @@ footer {
 </section>
 
 <section>
+  <h2>Loan Calculator</h2>
+  <div class="calculator">
+    <h3>Estimate Your Loan</h3>
+    <input type="number" id="loanAmount" placeholder="Loan Amount (₹)">
+    <input type="number" id="interestRate" placeholder="Interest Rate (%)">
+    <input type="number" id="loanTerm" placeholder="Term (Years)">
+    <button onclick="calculateLoan()">Calculate</button>
+    <p id="result"></p>
+  </div>
+</section>
+
+<section>
   <h2>Why Choose Us</h2>
   <div class="why">
     <div class="card">
+      <i class="fas fa-handshake fa-3x" style="color: #32CD32; margin-bottom: 20px;"></i>
       <h3>Honest & Transparent Guidance</h3>
       <p>We provide clear, unbiased advice to help you make informed decisions without hidden agendas.</p>
     </div>
     <div class="card">
+      <i class="fas fa-clock fa-3x" style="color: #32CD32; margin-bottom: 20px;"></i>
       <h3>Fast & Efficient Processing</h3>
       <p>Streamlined processes ensure quick approvals for policies and loans, saving you time and effort.</p>
     </div>
     <div class="card">
+      <i class="fas fa-shield-alt fa-3x" style="color: #32CD32; margin-bottom: 20px;"></i>
       <h3>Full Claim Support</h3>
       <p>Our dedicated team assists with every step of the claims process for a smooth and stress-free experience.</p>
     </div>
     <div class="card">
+      <i class="fas fa-wallet fa-3x" style="color: #32CD32; margin-bottom: 20px;"></i>
       <h3>Budget-Friendly Plans</h3>
       <p>Tailored solutions that fit your financial situation, ensuring affordability without compromising coverage.</p>
     </div>
@@ -303,16 +417,26 @@ footer {
   <div class="testimonials">
     <div class="card">
       <p>"Sinha Insurance helped me secure the perfect health plan for my family. Their guidance was invaluable!"</p>
-      <cite>- Rajesh Kumar, Agra</cite>
+      <cite>- A Satisfied Client</cite>
     </div>
     <div class="card">
       <p>"Fast loan approval and excellent support throughout. Highly recommend for business loans."</p>
-      <cite>- Priya Sharma, Agra</cite>
+      <cite>- A Happy Customer</cite>
     </div>
     <div class="card">
       <p>"Transparent and honest service. They made getting motor insurance so easy."</p>
-      <cite>- Anil Gupta, Agra</cite>
+      <cite>- A Valued Client</cite>
     </div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Partners</h2>
+  <div class="partners">
+    <img src="https://via.placeholder.com/100x50/32CD32/FFFFFF?text=Partner1" alt="Partner 1">
+    <img src="https://via.placeholder.com/100x50/2E8B57/FFFFFF?text=Partner2" alt="Partner 2">
+    <img src="https://via.placeholder.com/100x50/006400/FFFFFF?text=Partner3" alt="Partner 3">
+    <!-- Replace with actual partner logos -->
   </div>
 </section>
 
@@ -338,31 +462,13 @@ footer {
   </div>
 </section>
 
-<div class="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Address:</strong> F-164, Chandni Chowk, Kamla Nagar, Agra, Uttar Pradesh, India</p>
-  <p><strong>Phone:</strong> <a href="tel:8923115722">8923115722</a> | <a href="tel:9410009682">9410009682</a></p>
-  <p><strong>WhatsApp:</strong> <a href="https://wa.me/919410009682" target="_blank">Chat on WhatsApp</a></p>
-  <p><a href="https://www.google.com/maps/search/?api=1&query=F-164+Chandni+Chowk+Kamla+Nagar+Agra" target="_blank">📍 View on Google Maps</a></p>
-  
-  <div class="contact-form">
-    <h3>Get in Touch</h3>
-    <form action="/submit-form" method="post"> <!-- Replace with actual form handler -->
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="tel" name="phone" placeholder="Your Phone" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+<div class="newsletter">
+  <h2>Stay Updated</h2>
+  <p>Subscribe to our newsletter for the latest tips on insurance and loans.</p>
+  <input type="email" placeholder="Enter your email">
+  <button>Subscribe</button>
 </div>
 
-<footer>
-  © 2026 Sinha Insurance & Financial Solutions | All Rights Reserved | <a href="/privacy-policy" style="color: #ffd700;">Privacy Policy</a> | <a href="/terms" style="color: #ffd700;">Terms of Service</a>
-</footer>
-
-<a href="tel:8923115722" class="float-btn call-btn">📞 Call Now</a>
-<a href="https://wa.me/919410009682" class="float-btn whatsapp-btn">💬 WhatsApp</a>
-
-</body>
-</html>
+<div class="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Address:</strong> F-164
