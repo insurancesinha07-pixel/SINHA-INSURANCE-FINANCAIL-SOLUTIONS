@@ -559,4 +559,57 @@
    z-index:9999;">
    📞
 </a>
+<!-- Loan Calculator Section -->
+<section id="loan-calculator" style="background: white; padding: 80px 0;">
+    <div class="container">
+        <h2 class="section-title">Loan EMI Calculator</h2>
+        
+        <div style="max-width: 600px; margin: 0 auto; background: #f8f9fa; padding: 40px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            
+            <!-- Input Group -->
+            <div class="form-group">
+                <label for="amount" style="display: block; margin-bottom: 8px; font-weight: 600; color: #1a1a2e;">Loan Amount (₹)</label>
+                <input type="number" id="amount" placeholder="e.g., 100000" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: 'Poppins', sans-serif; font-size: 1rem;">
+            </div>
 
+            <div class="form-group">
+                <label for="rate" style="display: block; margin-bottom: 8px; font-weight: 600; color: #1a1a2e;">Interest Rate (% per year)</label>
+                <input type="number" id="rate" placeholder="e.g., 8.5" step="0.1" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: 'Poppins', sans-serif; font-size: 1rem;">
+            </div>
+
+            <div class="form-group">
+                <label for="years" style="display: block; margin-bottom: 8px; font-weight: 600; color: #1a1a2e;">Loan Tenure (Years)</label>
+                <input type="number" id="years" placeholder="e.g., 5" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: 'Poppins', sans-serif; font-size: 1rem;">
+            </div>
+
+            <button onclick="calculateEMI()" class="submit-btn" style="width: 100%; padding: 15px; background: #ffd700; color: #1a1a2e; border: none; border-radius: 5px; font-size: 1.1rem; font-weight: 600; cursor: pointer; margin-top: 10px;">Calculate EMI</button>
+
+            <!-- Result Display -->
+            <div id="result" style="margin-top: 30px; padding: 20px; background: #1a1a2e; color: white; border-radius: 8px; display: none;">
+                <h3 style="text-align: center; color: #ffd700; margin-bottom: 20px;">Results</h3>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid #333; padding-bottom: 10px;">
+                    <span>Monthly EMI:</span>
+                    <span style="font-weight: bold; font-size: 1.2rem;" id="emi-display">₹0</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px; color: #ccc; font-size: 0.9rem;">
+                    <span>Total Interest:</span>
+                    <span id="interest-display">₹0</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; color: #ccc; font-size: 0.9rem;">
+                    <span>Total Payment:</span>
+                    <span id="total-display">₹0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function calculateEMI() {
+        // Get values
+        const principal = parseFloat(document.getElementById('amount').value);
+        const rate = parseFloat(document.getElementById('rate').value);
+        const years = parseFloat(document.getElementById('years').value);
+
+        // Validation
+        if
